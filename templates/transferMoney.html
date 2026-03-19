@@ -1,0 +1,15 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="container">
+    <h2>Transfer Money</h2>
+    <p>Please enter transfer details</p>
+    <form action="/transferMoney" method="post">
+        <input type="text" name="recipient" placeholder="Recipient address">
+        <input type="number" name="amount" placeholder="Amount">
+        <input type="submit" value="Transfer">
+    </form>
+</div>
+</body>
